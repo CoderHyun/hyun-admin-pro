@@ -1,13 +1,13 @@
-# rouyi-hyun
+# hyun-admin
 
 ## 开发
 
 ```bash
 # 克隆项目
-https://github.com/CoderHyun/ruoyi-v3.git
+https://github.com/CoderHyun/hyun-vue3-admin.git
 
 # 进入项目目录
-cd ruoyi-v3
+cd hyun-vue3-admin
 
 # 安装依赖
 npm install

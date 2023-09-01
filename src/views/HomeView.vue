@@ -17,6 +17,6 @@
 
 <style lang="scss" scoped>
   .home {
-    padding: 100px;
+    padding: 10px;
   }
 </style>
