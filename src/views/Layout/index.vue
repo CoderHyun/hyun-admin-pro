@@ -13,7 +13,7 @@
     minHeight: 120,
     lineHeight: '120px',
     color: '#fff',
-    backgroundColor: '#00204a',
+    backgroundColor: '#fff',
   };
 
   const siderStyle = {
@@ -26,7 +26,7 @@
   const footerStyle = {
     textAlign: 'center',
     color: '#fff',
-    backgroundColor: '#fff',
+    backgroundColor: '#00bbf0',
   };
 </script>
 
