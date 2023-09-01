@@ -1,15 +1,11 @@
 <template>
-  <!--  <a-config-provider-->
-  <!--    :theme="{-->
-  <!--      token: {-->
-  <!--        colorPrimary: '#00b96b',-->
-  <!--      },-->
-  <!--    }"-->
-  <!--  >-->
-  <!--    <router-view />-->
-  <!--  </a-config-provider>-->
-  <router-view />
+  <ConfigProvider>
+    <router-view />
+  </ConfigProvider>
 </template>
 
-<script setup></script>
+<script setup>
+  import { ConfigProvider } from 'ant-design-vue';
+</script>
+
 <style lang="scss"></style>

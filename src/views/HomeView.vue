@@ -1,14 +1,18 @@
 <template>
   <div class="home">
-    <a-button type="primary">123</a-button>
+    {{ userStore.count }}
+    <a-button type="primary" @click="onIncrementClick">increment</a-button>
   </div>
 </template>
 
-<script>
-  export default {
-    name: 'HomeView',
-    components: {},
-  };
+<script setup>
+  import { useUserStore } from '@/store/modules/user';
+
+  const userStore = useUserStore();
+
+  function onIncrementClick() {
+    userStore.increment();
+  }
 </script>
 
 <style lang="scss" scoped>
