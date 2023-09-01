@@ -1,11 +1,19 @@
 import { createRouter, createWebHistory } from 'vue-router';
-import HomeView from '../views/HomeView.vue';
+
+import Layout from '@/views/Layout/index.vue';
 
 const routes = [
   {
     path: '/',
-    name: 'home',
-    component: HomeView,
+    component: Layout,
+    children: [
+      {
+        path: 'Home',
+        component: () => import('@/views/HomeView.vue'),
+        name: 'Home',
+        meta: { title: '首页', icon: 'user' },
+      },
+    ],
   },
 ];
 
