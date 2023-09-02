@@ -1,4 +1,8 @@
-#app, section {
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+#app, section,.app-provider {
   height: 100%;
 }
 
