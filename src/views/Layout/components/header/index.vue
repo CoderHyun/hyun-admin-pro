@@ -1,13 +1,23 @@
 <script setup>
-  import { ref } from 'vue';
+  import { useAppStore } from '@/store/modules/app';
 
-  const collapsed = ref(false);
+  const appStore = useAppStore();
 </script>
 
 <template>
   <ALayoutHeader style="background: #fff; padding: 0 20px">
-    <MenuUnfoldOutlined v-if="collapsed" class="trigger" @click="() => (collapsed = !collapsed)" />
-    <MenuFoldOutlined v-else class="trigger" @click="() => (collapsed = !collapsed)" />
+    <MenuUnfoldOutlined
+      v-if="appStore.menuCollapsed"
+      class="trigger"
+      :style="appStore.iconStyle"
+      @click="() => appStore.setMenuCollapsed(!appStore.menuCollapsed)"
+    />
+    <MenuFoldOutlined
+      v-else
+      class="trigger"
+      :style="appStore.iconStyle"
+      @click="() => appStore.setMenuCollapsed(!appStore.menuCollapsed)"
+    />
   </ALayoutHeader>
 </template>
 

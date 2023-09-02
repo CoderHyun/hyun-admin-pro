@@ -1,3 +1,4 @@
+import Icon from '@/components/Icon/index.vue';
 import * as Icons from '@ant-design/icons-vue';
 
 /**
@@ -8,4 +9,5 @@ export function setupIconVue(app) {
   for (let iconsKey in Icons) {
     app.component(iconsKey, Icons[iconsKey]);
   }
+  app.component('Icon', Icon);
 }
